@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* Gradiente moderno idêntico ao da imagem */
+    background: linear-gradient(180deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    object-fit: cover;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom: 2px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 420px; /* Largura ideal para ver os livros grandes */
+}
+
+.card {
+    /* Card rosa translúcido do modelo */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 22px 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.livros-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.livros-container img {
+    width: 65px;
+    height: 98px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.livros-container img:hover {
+    transform: scale(1.08);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    color: #c8235e; /* Texto em tom rosa vibrante */
+    padding: 12px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: #f8f9fa;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Estilos da página Sobre Mim */
+.bio-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.interesses-list {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+}
